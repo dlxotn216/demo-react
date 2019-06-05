@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+html, body, #root , .left-wrap, .right-wrap{
+  height:100vh;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.left-wrap {
+  width: 300px;
+  float: left;
+  border-right: 1px solid black;
+}
+
+.right-wrap {
+  width: calc(100% - 305px);
+  left: 305px;
+  float: left;
+  overflow-y: scroll;
+  position: absolute;
+}
