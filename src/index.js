@@ -7,6 +7,7 @@ import * as serviceWorker from "./serviceWorker";
 import LeftMenu from "./LeftMenu";
 
 import {makeStyles} from "@material-ui/core/styles";
+import Day02App from "./day02/Day02App";
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -28,6 +29,7 @@ class App extends Component {
                 </div>
                 <div className="right-wrap">
                     <Route path="/day01" component={Day01App}/>
+                    <Route path="/day02" component={Day02App}/>
                 </div>
             </BrowserRouter>
         )
