@@ -18,6 +18,10 @@ class LeftMenu extends Component {
                                  activeClassName="selected">Day01</NavLink></li>
                     <li><NavLink to="/day02" uri="/day02" onClick={this.handleRoute}
                                  activeClassName="selected">Day02</NavLink></li>
+                    <li><NavLink to="/day03" uri="/day03" onClick={this.handleRoute}
+                                 activeClassName="selected">Day03</NavLink></li>
+                    <li><NavLink to="/day03-movie" uri="/day03-movie" onClick={this.handleRoute}
+                                 activeClassName="selected">Day03MovieApp</NavLink></li>
                 </ul>
             </div>
         )

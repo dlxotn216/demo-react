@@ -95,7 +95,7 @@ class Form extends React.Component {
                         <option value="type3">Type3</option>
                     </select>
                 </div>
-                <input type='submit' value='Submit'/>
+                <input type='addMovie' value='Submit'/>
             </form>
         );
     }*/
