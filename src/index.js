@@ -9,6 +9,7 @@ import Day02App from "./day02/Day02App";
 import Day03App from "./day03/Day03App";
 import Day03MovieApp from "./day03-01-movieapp/Day03MovieApp";
 import Day03LifeCycleApp from "./day03-02-lifecyclle/Day03LifeCycleApp";
+import Day04FetchApp from "./day04-fetch/Day04FetchApp";
 class App extends Component {
     render() {
         return (
@@ -22,6 +23,7 @@ class App extends Component {
                     <Route path="/day03" component={Day03App}/>
                     <Route path="/day03-movie" component={Day03MovieApp}/>
                     <Route path="/day03-lifecycle" component={Day03LifeCycleApp}/>
+                    <Route path="/day04-fetch" component={Day04FetchApp}/>
                 </div>
             </BrowserRouter>
         )
