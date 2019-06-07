@@ -8,6 +8,7 @@ import React, {Component} from "react";
 import fetch from "isomorphic-fetch";
 
 class Day04FetchApp extends Component {
+
     constructor(props) {
         super(props);
         this.state = {
@@ -19,7 +20,7 @@ class Day04FetchApp extends Component {
     componentDidMount() {
         this.setState({loading: true});
 
-        /* https://restcountries.eu/#api-endpoints-all */
+        /* https://restcountries.eu/#api-endpoints-all 참조 */
         fetch('https://restcountries.eu/rest/v2/all')
             .then(res => res.json())
             .then(json => json.map(country => country.name))
