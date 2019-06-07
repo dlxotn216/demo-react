@@ -20,7 +20,7 @@ class Day04FetchApp extends Component {
     componentDidMount() {
         this.setState({loading: true});
 
-        /* https://restcountries.eu/#api-endpoints-all 참조 */
+        /* https://restcountries.eu/#api-endpoints-all */
         fetch('https://restcountries.eu/rest/v2/all')
             .then(res => res.json())
             .then(json => json.map(country => country.name))
