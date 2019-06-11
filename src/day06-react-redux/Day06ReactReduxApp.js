@@ -11,11 +11,11 @@ import {connect, Provider} from "react-redux";
 
 const ADD_TODO = 'ADD_TODO'
 
-function addTodo(text) {
+function addTodo(id, text) {
     return {
         type: ADD_TODO,
         text,
-        id: Math.random()
+        id
     }
 }
 
@@ -44,42 +44,37 @@ const store = createStore(todoApp);
 
 class App extends Component {
 
-    handleInputChange = (event) => {
-        const target = event.target;
-        const value = target.type === 'checkbox' ? target.checked : target.value;
-        const name = target.name;
-
-        this.setState({
-            [name]: value
-        });
-    };
-    
-    submit = (e) => {
-        e.preventDefault();
-        store.dispatch(addTodo(this.state.description))
-    };
-    
     render() {
         return (
-            <div>
-
-                <form onSubmit={this.submit}>
-                    <input type="text" name="description" onChange={this.handleInputChange}/>
-                    <button>add</button>
-                </form>
-                <MyToDoList />
-            </div>
+            <MyToDoList />
         )
     }
 }
 
-const TodoList = ({todos}) => (
-    <ul>
-        {todos.map(todo => (
-            <Todo key={todo.id} {...todo} />
-        ))}
-    </ul>
-);
+const TodoList = ({todos}) => {
+    let _title;    
+    const submit = (e) => {
+        e.preventDefault();
+
+        store.dispatch(addTodo(Math.random(), _title.value));
+        _title.value = '';
+        _title.focus();
+    };
+
+    return (
+        <div>
+            <form onSubmit={submit}>
+                <input ref={input => _title = input} type="text" name="description" />
+                <button>add</button>
+            </form>
+            <ul>
+                {todos.map(todo => (
+                    <Todo key={todo.id} {...todo} />
+                ))}
+            </ul>
+        </div>
+    )
+};
 const Todo = ({onClick, completed, text}) => (
     <li
         onClick={onClick}
@@ -95,13 +90,19 @@ const mapStateToProps = state => ({
     todos: state.todos
 });
 
+const mapToDispatch = dispatch => ({
+    onNewTodo(id, description) {
+        dispatch(addTodo(id, description));
+    }
+});
+
 
 const MyToDoList = connect(
-    mapStateToProps
+    mapStateToProps,
+    mapToDispatch
 )(TodoList);
 
 class Day06ReactReduxApp extends Component {
-
     render() {
         return (
             <Provider store={store}>
@@ -109,7 +110,6 @@ class Day06ReactReduxApp extends Component {
             </Provider>
         )
     }
-
 }
 
 export default Day06ReactReduxApp
