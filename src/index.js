@@ -11,6 +11,7 @@ import Day03MovieApp from "./day03-01-movieapp/Day03MovieApp";
 import Day03LifeCycleApp from "./day03-02-lifecyclle/Day03LifeCycleApp";
 import Day04FetchApp from "./day04-fetch/Day04FetchApp";
 import Day04HighOrderComponent from "./day04-highorder-component/Day04HighOrderComponent";
+import Day06ReactReduxApp from "./day06-react-redux/Day06ReactReduxApp";
 class App extends Component {
     render() {
         return (
@@ -26,6 +27,7 @@ class App extends Component {
                     <Route path="/day03-lifecycle" component={Day03LifeCycleApp}/>
                     <Route path="/day04-fetch" component={Day04FetchApp}/>
                     <Route path="/day04-highorder" component={Day04HighOrderComponent}/>
+                    <Route path="/day06-react-redux" component={Day06ReactReduxApp}/>
                 </div>
             </BrowserRouter>
         )
