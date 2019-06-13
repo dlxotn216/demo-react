@@ -5,7 +5,8 @@ import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 import LeftMenu from "./LeftMenu";
 import Day01Application from "./day01/Day01Application";
-import RepeatComponent from "./day01-RepeatComponent/RepeatComponent";
+import RepeatComponent from "./day01-02.RepeatComponent/RepeatComponent";
+import LifeCycleApplication from "./day01-03.lifecycle/LifeCycleApplication";
 class App extends Component {
     render() {
         return (
@@ -16,6 +17,7 @@ class App extends Component {
                 <div className="right-wrap">
                     <Route path="/day01-basic" component={Day01Application}/>
                     <Route path="/day01-repeat" component={RepeatComponent}/>
+                    <Route path="/day01-lifecycle" component={LifeCycleApplication}/>
                 </div>
             </BrowserRouter>
         )
