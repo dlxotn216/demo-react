@@ -16,6 +16,8 @@ class LeftMenu extends Component {
                 <ul>
                     <li><NavLink to="/day01-basic" uri="/day01-basic" onClick={this.handleRoute}
                                  activeClassName="selected">Day01Application</NavLink></li>
+                    <li><NavLink to="/day01-repeat" uri="/day01-repeat" onClick={this.handleRoute}
+                                 activeClassName="selected">RepeatComponent</NavLink></li>
                 </ul>
             </div>
         )
