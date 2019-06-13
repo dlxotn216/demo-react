@@ -14,22 +14,8 @@ class LeftMenu extends Component {
         return (
             <div className="left-menu">
                 <ul>
-                    <li><NavLink to="/day01" uri="/day01" onClick={this.handleRoute}
-                                 activeClassName="selected">Day01</NavLink></li>
-                    <li><NavLink to="/day02" uri="/day02" onClick={this.handleRoute}
-                                 activeClassName="selected">Day02</NavLink></li>
-                    <li><NavLink to="/day03" uri="/day03" onClick={this.handleRoute}
-                                 activeClassName="selected">Day03</NavLink></li>
-                    <li><NavLink to="/day03-movie" uri="/day03-movie" onClick={this.handleRoute}
-                                 activeClassName="selected">Day03MovieApp</NavLink></li>
-                    <li><NavLink to="/day03-lifecycle" uri="/day03-lifecycle" onClick={this.handleRoute}
-                                 activeClassName="selected">Day03LifeCycleApp</NavLink></li>
-                    <li><NavLink to="/day04-fetch" uri="/day04-fetch" onClick={this.handleRoute}
-                                 activeClassName="selected">Day04FetchApp</NavLink></li>
-                    <li><NavLink to="/day04-highorder" uri="/day04-highorder" onClick={this.handleRoute}
-                                 activeClassName="selected">Day04HighOrderComponent</NavLink></li>
-                    <li><NavLink to="/day06-react-redux" uri="/day06-react-redux" onClick={this.handleRoute}
-                                 activeClassName="selected">Day06ReactReduxApp</NavLink></li>
+                    <li><NavLink to="/day01-basic" uri="/day01-basic" onClick={this.handleRoute}
+                                 activeClassName="selected">Day01Application</NavLink></li>
                 </ul>
             </div>
         )
