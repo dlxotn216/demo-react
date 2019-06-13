@@ -2,16 +2,16 @@ import React, {Component} from "react";
 import ReactDOM from "react-dom";
 import {BrowserRouter, Route} from "react-router-dom";
 import "./index.css";
-import Day01App from "./day01/Day01App";
+import Day01App from "./Learning React/day01/Day01App";
 import * as serviceWorker from "./serviceWorker";
 import LeftMenu from "./LeftMenu";
-import Day02App from "./day02/Day02App";
-import Day03App from "./day03/Day03App";
-import Day03MovieApp from "./day03-01-movieapp/Day03MovieApp";
-import Day03LifeCycleApp from "./day03-02-lifecyclle/Day03LifeCycleApp";
-import Day04FetchApp from "./day04-fetch/Day04FetchApp";
-import Day04HighOrderComponent from "./day04-highorder-component/Day04HighOrderComponent";
-import Day06ReactReduxApp from "./day06-react-redux/Day06ReactReduxApp";
+import Day02App from "./Learning React/day02/Day02App";
+import Day03App from "./Learning React/day03/Day03App";
+import Day03MovieApp from "./Learning React/day03-01-movieapp/Day03MovieApp";
+import Day03LifeCycleApp from "./Learning React/day03-02-lifecyclle/Day03LifeCycleApp";
+import Day04FetchApp from "./Learning React/day04-fetch/Day04FetchApp";
+import Day04HighOrderComponent from "./Learning React/day04-highorder-component/Day04HighOrderComponent";
+import Day06ReactReduxApp from "./Learning React/day06-react-redux/Day06ReactReduxApp";
 class App extends Component {
     render() {
         return (

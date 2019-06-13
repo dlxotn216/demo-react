@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import Day01App from "./Day01App";
 
-import * as serviceWorker from "../serviceWorker";
+import * as serviceWorker from "../../serviceWorker";
 import Menu from "./Menu";
 import Clock from "./Clock";
 import Form from "./Form";

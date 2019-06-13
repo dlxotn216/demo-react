@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../logo.svg";
+import logo from "../../logo.svg";
 import "./Day01App.css";
 import Clock from "./Clock";
 import Menu from "./Menu";
