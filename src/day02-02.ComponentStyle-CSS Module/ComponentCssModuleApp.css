@@ -1,0 +1,54 @@
+/**
+ * @author Lee Tae Su 
+ * @project demo-react
+ * @version 1.0
+ * @since 2019-06-14
+ */
+
+.box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blue { background-color: blue}
+
+
+.box2 {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    position: fixed;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.red { background-color: red}
+
+.box3 {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    position: fixed;
+    top: 70%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.green { background-color: green}
+
+.bar {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    position: fixed;
+}
