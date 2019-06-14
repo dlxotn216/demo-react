@@ -9,6 +9,7 @@ import RepeatComponent from "./day01-02.RepeatComponent/RepeatComponent";
 import LifeCycleApplication from "./day01-03.lifecycle/LifeCycleApplication";
 import FunctionalComponent from "./day02-01.Functional Component/FunctionalComponent";
 import ComponentCssModuleApp from "./day02-02.ComponentStyle-CSS Module/ComponentCssModuleApp";
+import ComponentStyledComponents from "./day02-03.ComponentStyle-Styled Components/ComponentStyledComponents";
 class App extends Component {
     render() {
         return (
@@ -22,6 +23,7 @@ class App extends Component {
                     <Route path="/day01-lifecycle" component={LifeCycleApplication}/>
                     <Route path="/day02-functionalcomponent" component={FunctionalComponent}/>
                     <Route path="/day02-component-css-module" component={ComponentCssModuleApp}/>
+                    <Route path="/day02-styled-components" component={ComponentStyledComponents}/>
                 </div>
             </BrowserRouter>
         )
