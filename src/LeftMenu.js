@@ -26,6 +26,8 @@ class LeftMenu extends Component {
                                  activeClassName="selected">ComponentCssModuleApp</NavLink></li>
                     <li><NavLink to="/day02-styled-components" uri="/day02-styled-components" onClick={this.handleRoute}
                                  activeClassName="selected">ComponentStyledComponents</NavLink></li>
+                    <li><NavLink to="/day03-sass" uri="/day03-sass" onClick={this.handleRoute}
+                                 activeClassName="selected">SassComponentSample</NavLink></li>
                 </ul>
             </div>
         )

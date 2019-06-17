@@ -10,6 +10,7 @@ import LifeCycleApplication from "./day01-03.lifecycle/LifeCycleApplication";
 import FunctionalComponent from "./day02-01.Functional Component/FunctionalComponent";
 import ComponentCssModuleApp from "./day02-02.ComponentStyle-CSS Module/ComponentCssModuleApp";
 import ComponentStyledComponents from "./day02-03.ComponentStyle-Styled Components/ComponentStyledComponents";
+import SassComponentSample from "./day03-01.ComponentStyle-Sass/SassComponentSample";
 class App extends Component {
     render() {
         return (
@@ -24,6 +25,7 @@ class App extends Component {
                     <Route path="/day02-functionalcomponent" component={FunctionalComponent}/>
                     <Route path="/day02-component-css-module" component={ComponentCssModuleApp}/>
                     <Route path="/day02-styled-components" component={ComponentStyledComponents}/>
+                    <Route path="/day03-sass" component={SassComponentSample}/>
                 </div>
             </BrowserRouter>
         )

@@ -7,7 +7,8 @@
 
 import React, {Component, Fragment} from "react";
 import styles from "./ComponentCssModuleApp.css";
-import classNames from 'classnames';
+// import classNames from 'classnames';     //동작하지 않는 원인
+import classNames from "classnames/bind"; // classnames/bind 모듈을 사용 해야 함
 
 const cx = classNames.bind(styles);
 
@@ -18,7 +19,7 @@ const cx = classNames.bind(styles);
 
 /**
  * https://velog.io/@velopert/react-component-styling 참조
- * 
+ *
  * cssModule 보다는 styled-cmoponents를 주로 사용
  */
 class ComponentCssModuleApp extends Component {
@@ -29,7 +30,7 @@ class ComponentCssModuleApp extends Component {
                 <div className={classNames(styles.box2, styles.red)}>by using classNames(styles.box2...)</div>
                 <div className={cx(styles.box3, styles.green)}>by using classNames cx(styles.box3...)</div>
                 <div className={cx('box3', 'green')}>by using classNames cx(box3...)동작하지 않음</div>
-                <div className={cx({[styles.bar]: true, [styles.duck]:false}, styles.custom)}>조건절 사용</div>
+                <div className={cx({[styles.bar]: true, [styles.duck]: false}, styles.custom)}>조건절 사용</div>
             </Fragment>
         )
     }
