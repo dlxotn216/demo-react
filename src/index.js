@@ -1,7 +1,8 @@
 import React, {Component} from "react";
 import ReactDOM from "react-dom";
 import {BrowserRouter, Route} from "react-router-dom";
-import "./index.css";
+import styles from "./index.css";
+import classnames from "classnames/bind";
 import * as serviceWorker from "./serviceWorker";
 import LeftMenu from "./LeftMenu";
 import Day01Application from "./day01/Day01Application";
@@ -11,14 +12,17 @@ import FunctionalComponent from "./day02-01.Functional Component/FunctionalCompo
 import ComponentCssModuleApp from "./day02-02.ComponentStyle-CSS Module/ComponentCssModuleApp";
 import ComponentStyledComponents from "./day02-03.ComponentStyle-Styled Components/ComponentStyledComponents";
 import SassComponentSample from "./day03-01.ComponentStyle-Sass/SassComponentSample";
+
+const cx = classnames.bind(styles);
+
 class App extends Component {
     render() {
         return (
             <BrowserRouter>
-                <div className="left-wrap">
+                <div className={cx('left-wrap')}>
                     <LeftMenu />
                 </div>
-                <div className="right-wrap">
+                <div className={cx('right-wrap')}>
                     <Route path="/day01-basic" component={Day01Application}/>
                     <Route path="/day01-repeat" component={RepeatComponent}/>
                     <Route path="/day01-lifecycle" component={LifeCycleApplication}/>

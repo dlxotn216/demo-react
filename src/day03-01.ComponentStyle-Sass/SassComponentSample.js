@@ -4,9 +4,9 @@
  * @version 1.0
  * @since 2019-06-17
  */
-import React, {Component} from "react";
+import React, {Component, Fragment} from "react";
 import styles from "./SassComponentSample.scss";
-import classnames from 'classnames/bind';
+import classnames from "classnames/bind";
 
 const cx = classnames.bind(styles);
 
@@ -17,9 +17,14 @@ class SassComponentSample extends Component {
 
     render() {
         return (
-            <div className={cx('MyComponent')}>
-                <div className={cx('something-inside')}>Hello Something</div>
-            </div>
+            <Fragment>
+                <div className={cx('MyComponent')}>
+                    <div className={cx('something-inside')}>Hello Something</div>
+                </div>
+                <div className={cx('box')}>
+                    Hello i'm boxx styled sass
+                </div>
+            </Fragment>
         )
     }
 }
