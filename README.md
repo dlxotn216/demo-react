@@ -1,3 +1,3 @@
 # Related repository
-## TodoApp
+## React Demo App
 https://github.com/dlxotn216/react-demo-app
